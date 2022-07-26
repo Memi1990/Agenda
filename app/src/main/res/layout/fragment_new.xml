@@ -34,6 +34,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/tenor_sans"
         android:text="@string/add_contact_photo"
+        android:textStyle="bold"
         android:translationY="190dp" />
 
     <EditText
@@ -47,6 +48,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textStyle="bold"
         android:translationY="240dp" />
 
     <EditText
@@ -60,6 +62,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textStyle="bold"
         android:translationY="300dp"
         tools:ignore="TextContrastCheck" />
 
@@ -74,6 +77,7 @@
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:textStyle="bold"
         android:translationY="360dp" />
 
     <EditText
@@ -87,6 +91,7 @@
         android:importantForAutofill="no"
         android:inputType="phone"
         android:minHeight="48dp"
+        android:textStyle="bold"
         android:translationY="420dp" />
 
     <Button
@@ -96,5 +101,6 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/tenor_sans"
         android:text="@string/btn_create"
+        android:textStyle="bold"
         android:translationY="520dp" />
 </RelativeLayout>

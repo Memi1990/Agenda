@@ -26,13 +26,7 @@ class UpdateFragment : Fragment() {
             ViewModelProvider(this).get(UpdateViewModel::class.java)
 
         _binding = FragmentUpdateBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
-        updateViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {

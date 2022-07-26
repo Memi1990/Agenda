@@ -26,13 +26,7 @@ class NewFragment : Fragment() {
             ViewModelProvider(this).get(NewViewModel::class.java)
 
         _binding = FragmentNewBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textDashboard
-        newViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {
