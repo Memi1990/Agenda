@@ -4,6 +4,13 @@
     <string name="title_new">New Contact</string>
     <string name="title_update">Update</string>
     <string name="title_delete">Delete Contact</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_mail">E-mail</string>
+    <string name="hint_phone">Phone</string>
+    <string name="btn_create">Add Contact</string>
+    <string name="add_contact_photo">Add Photo</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
