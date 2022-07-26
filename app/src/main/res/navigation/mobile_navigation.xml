@@ -22,4 +22,9 @@
         android:name="com.example.agenda.ui.update.UpdateFragment"
         android:label="@string/title_update"
         tools:layout="@layout/fragment_update" />
+    <fragment
+        android:id="@+id/navigation_del"
+        android:name="com.example.agenda.ui.delete.DelFragment"
+        android:label="fragment_del"
+        tools:layout="@layout/fragment_del" />
 </navigation>
