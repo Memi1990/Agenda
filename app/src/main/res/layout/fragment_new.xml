@@ -18,7 +18,8 @@
         android:text="@string/title_new"
         android:textAlignment="center"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="@font/tenor_sans"/>
 
     <ImageView
         android:id="@+id/ivNew"
