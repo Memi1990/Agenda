@@ -7,16 +7,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.agenda.GetSpinner
 import com.example.agenda.databinding.FragmentUpdateBinding
 
 class UpdateFragment : Fragment() {
 
-    private var _binding: FragmentUpdateBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
+    private var _b: FragmentUpdateBinding? = null
+    private val b get() = _b!!
+//    private lateinit var spnOpt = ArrayList<>
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,13 +22,13 @@ class UpdateFragment : Fragment() {
     ): View {
         val updateViewModel =
             ViewModelProvider(this).get(UpdateViewModel::class.java)
-
-        _binding = FragmentUpdateBinding.inflate(inflater, container, false)
-        return binding.root
+        _b = FragmentUpdateBinding.inflate(inflater, container, false)
+//        GetSpinner(context,b.spnUpdId,)
+        return b.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        _b = null
     }
 }

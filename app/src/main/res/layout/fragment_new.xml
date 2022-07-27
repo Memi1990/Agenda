@@ -51,7 +51,8 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textStyle="bold"
-        android:translationY="240dp" />
+        android:translationY="240dp"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/etSurname"
@@ -80,7 +81,8 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textStyle="bold"
-        android:translationY="360dp" />
+        android:translationY="360dp"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/edPhone"
@@ -94,7 +96,8 @@
         android:inputType="phone"
         android:minHeight="48dp"
         android:textStyle="bold"
-        android:translationY="420dp" />
+        android:translationY="420dp"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnAddContact"

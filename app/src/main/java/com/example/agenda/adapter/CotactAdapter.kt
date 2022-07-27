@@ -1,6 +1,7 @@
 package com.example.agenda.adapter
 
 import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -20,5 +21,7 @@ class CotactAdapter(private val contactList:List<ContactData>): RecyclerView.Ada
     }
 
     override fun getItemCount(): Int = contactList.size
+
+
 
 }

@@ -28,8 +28,8 @@
                 android:id="@+id/ivContact"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                tools:ignore="ImageContrastCheck"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/girl"
+                tools:ignore="ImageContrastCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,6 +68,12 @@
                     android:layout_marginBottom="1dp"
                     android:hint="@string/hint_phone"
                     tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
             </LinearLayout>
         </LinearLayout>
 
