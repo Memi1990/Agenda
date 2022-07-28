@@ -15,24 +15,24 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/tenor_sans"
         android:text="@string/titleDelContact"
         android:textAlignment="center"
         android:textSize="28sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/tenor_sans"/>
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spnDelContact"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/tenor_sans"
         android:minHeight="48dp"
         android:translationY="100dp"
-        android:fontFamily="@font/tenor_sans"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button

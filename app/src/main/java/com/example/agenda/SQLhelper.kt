@@ -62,4 +62,16 @@ class SQLhelper(context: Context?): SQLiteOpenHelper(context, DATABASE, null, 1)
         return affectedRows
     }
 
+    fun deleteData (id: String) : Int {
+        val args = arrayOf(id)
+
+        val db = this.writableDatabase
+        // La ejecución de este comando devuelve el número de registros afectados
+        val affectedRows = db.delete(TABLE_NAME, "_id = ?",args)
+        // Alternativamente. Pero esta forma no devuelve nada
+        // db.execSQL("DELETE FROM friends WHERE _id = ?", args)
+        db.close()
+        return affectedRows
+    }
+
 }
