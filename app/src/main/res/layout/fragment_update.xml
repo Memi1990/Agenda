@@ -14,94 +14,111 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/tenor_sans"
         android:text="@string/titleUpdateContact"
         android:textAlignment="center"
         android:textSize="28sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/tenor_sans"/>
+        android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spnUpdId"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:minHeight="48dp"
-        android:translationY="100dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_height="match_parent"
+        android:translationY="70dp">
 
-    <EditText
-        android:id="@+id/etUpdName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:fontFamily="@font/tenor_sans"
-        android:hint="@string/hint_name"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textStyle="bold"
-        android:translationY="240dp"
-        tools:ignore="TextContrastCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/etUpdSurname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:fontFamily="@font/tenor_sans"
-        android:hint="@string/hint_surname"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textStyle="bold"
-        android:translationY="300dp"
-        tools:ignore="TextContrastCheck" />
+            <Spinner
+                android:id="@+id/spnUpdId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/select_contact"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-    <EditText
-        android:id="@+id/etUpdMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:fontFamily="@font/tenor_sans"
-        android:hint="@string/hint_mail"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textStyle="bold"
-        android:translationY="360dp"
-        tools:ignore="TextContrastCheck" />
+            <EditText
+                android:id="@+id/etUpdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/tenor_sans"
+                android:hint="@string/hint_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/edUpdPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:fontFamily="@font/tenor_sans"
-        android:hint="@string/hint_phone"
-        android:importantForAutofill="no"
-        android:inputType="phone"
-        android:minHeight="48dp"
-        android:textStyle="bold"
-        android:translationY="420dp"
-        tools:ignore="TextContrastCheck" />
+            <EditText
+                android:id="@+id/etUpdSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/tenor_sans"
+                android:hint="@string/hint_surname"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
-    <Button
-        android:id="@+id/btnUpdContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/tenor_sans"
-        android:text="@string/btn_create"
-        android:textStyle="bold"
-        android:translationY="520dp" />
+            <EditText
+                android:id="@+id/etUpdMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/tenor_sans"
+                android:hint="@string/hint_mail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/edUpdPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/tenor_sans"
+                android:hint="@string/hint_phone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btnUpdContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/tenor_sans"
+                android:text="@string/btn_create"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

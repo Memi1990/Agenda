@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.agenda.SQLhelper
 import com.example.agenda.databinding.FragmentNewBinding
+import com.example.agenda.hideKeyboard
 
 class NewFragment : Fragment() {
 
@@ -34,6 +35,7 @@ class NewFragment : Fragment() {
         contactDBHelper= SQLhelper(context)
 
         binding.btnAddContact.setOnClickListener {
+            hideKeyboard()
             if (binding.etName.text.isNotBlank() &&
                 binding.etSurname.text.isNotBlank()&&
                 binding.etMail.text.isNotBlank()&&
@@ -46,12 +48,13 @@ class NewFragment : Fragment() {
                 binding.etSurname.text.clear()
                 binding.etMail.text.clear()
                 binding.edPhone.text.clear()
-//                hideKeyBoard()
-                Toast.makeText(context,"¡Guardado!", Toast.LENGTH_SHORT).show()
 
+                Toast.makeText(context,"¡Guardado!", Toast.LENGTH_SHORT).show()
+                hideKeyboard()
             } else {
                 Toast.makeText(context, "No se ha podido guardar", Toast.LENGTH_SHORT).show()
             }
+            hideKeyboard()
         }
         return binding.root
     }

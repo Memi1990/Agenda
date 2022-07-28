@@ -7,20 +7,20 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 
 class GetSpinner {
-    private var _spinner: Spinner
+    private var _spinner:Spinner
     private var _selectedOption = arrayOf("")
 
-    constructor(context: Context, spinner: Spinner, selectedOption:Array<String>, idVals:Int) {
+    constructor(spinner: Spinner, selectedOption:Array<String>, idVals:Int) {
         this._spinner = spinner
         this._selectedOption = selectedOption
-        val mAdapter = ArrayAdapter.createFromResource(context, idVals, android.R.layout.simple_spinner_item)
+        val mAdapter = ArrayAdapter.createFromResource(spinner.context, idVals, android.R.layout.simple_spinner_item)
         this._spinner.adapter = mAdapter
         setOnSelect()
     }
-    constructor(context: Context, spinner: Spinner, selectedOption:Array<String>, arrVals:Array<String>) {
+    constructor(spinner: Spinner, selectedOption:Array<String>, arrVals:Array<String>) {
         this._spinner = spinner
         this._selectedOption = selectedOption
-        val mAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, arrVals)
+        val mAdapter = ArrayAdapter(spinner.context, android.R.layout.simple_spinner_item, arrVals)
         this._spinner.adapter = mAdapter
         setOnSelect()
     }

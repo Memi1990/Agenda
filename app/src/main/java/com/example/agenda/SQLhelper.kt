@@ -45,5 +45,21 @@ class SQLhelper(context: Context?): SQLiteOpenHelper(context, DATABASE, null, 1)
         db.insert("contacts", null,data)
         db.close()
     }
+    fun updateData (id:String, name: String, last_name: String, email: String, phone: String) : Int {
+        val args = arrayOf(id)
+
+        // ContentValues tiene una estructura de tipo Map()
+        val data = ContentValues()
+        data.put(FIELD_NAME, name)
+        data.put(FIELD_SURNAME, last_name)
+        data.put(FIELD_MAIL, email)
+        data.put(FIELD_PHONE, phone)
+        // Abro la DB en modo ESCRITURA
+        val db = this.writableDatabase
+        // La ejecución de este comando devuelve el número de registros afectados
+        val affectedRows = db.update(TABLE_NAME, data, "_id = ?",args)
+        db.close()
+        return affectedRows
+    }
 
 }

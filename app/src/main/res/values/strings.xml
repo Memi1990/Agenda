@@ -13,6 +13,7 @@
     <string name="titleUpdateContact">Update Contact</string>
     <string name="titleListContact">Contacts</string>
     <string name="titleDelContact">Delete Contact</string>
+    <string name="select_contact">Selecciona un contacto</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
